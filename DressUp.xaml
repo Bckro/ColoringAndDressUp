@@ -1,0 +1,232 @@
+﻿<Page NavigationCacheMode="Enabled"
+    x:Class="ColoringAndDressUp.DressUp"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Name="BodyCategory" Grid.Column="6" HorizontalAlignment="Center" VerticalAlignment="Stretch" Orientation="Vertical" Background="DeepPink" Margin="30,30,30,30">
+            <StackPanel Orientation="Horizontal" >
+                <Button Name="body_" Click="body__Click">
+                    <Image Source="Assets/DressUp/Icon/body_icon.png" Width="100" Height="100" Stretch="Fill"/>
+                </Button>    
+            </StackPanel>            
+        </StackPanel>
+
+        <StackPanel Visibility="Collapsed" Name="EyesCategory" Grid.Column="6" HorizontalAlignment="Center" VerticalAlignment="Stretch" Orientation="Vertical" Background="DeepPink" Margin="30,30,30,30">
+            <StackPanel Orientation="Horizontal">
+                <Button Name="eyes1_" Click="eyes1__Click">
+                    <Image Source="Assets/DressUp/Icon/eyes1_icon.png" Width="100" Height="100" Stretch="Fill"/>
+                </Button>
+                <Button Name="eyes2_" Click="eyes2__Click">
+                    <Image Source="Assets/DressUp/Icon/eyes2_icon.png" Width="100" Height="100" Stretch="Fill"/>
+                </Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button Name="eyes3_" Click="eyes3__Click">
+                    <Image Source="Assets/DressUp/Icon/eyes3_icon.png" Width="100" Height="100" Stretch="Fill"/>
+                </Button>               
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel Visibility="Collapsed" Name="MouthCategory" Grid.Column="6" HorizontalAlignment="Center" VerticalAlignment="Stretch" Orientation="Vertical" Background="DeepPink" Margin="30,30,30,30">
+            <StackPanel Orientation="Horizontal">
+                <Button Name="mouth1" Click="mouth1_Click">
+                    <Image Source="Assets/DressUp/Icon/mouth1_icon.png" Width="100" Height="100" Stretch="Fill"/>
+                </Button>
+                <Button Name="mouth2" Click="mouth2_Click">
+                    <Image Source="Assets/DressUp/Icon/mouth2_icon.png" Width="100" Height="100" Stretch="Fill"/>
+                </Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button Name="mouth3" Click="mouth3_Click">
+                    <Image Source="Assets/DressUp/Icon/mouth3_icon.png" Width="100" Height="100" Stretch="Fill"/>
+                </Button>
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel Visibility="Collapsed" Name="HairFrontCategory" Grid.Column="6" HorizontalAlignment="Center" VerticalAlignment="Stretch" Orientation="Vertical" Background="DeepPink" Margin="30,30,30,30">
+            <StackPanel Orientation="Horizontal">
+                <Button Name="hairfront1" Click="hairfront1_Click">
+                    <Image Source="Assets/DressUp/Icon/hairfront1_icon.png" Width="100" Height="100" Stretch="Fill"/>
+                </Button>
+                <Button Name="hairfront2" Click="hairfront2_Click">
+                    <Image Source="Assets/DressUp/Icon/hairfront2_icon.png" Width="100" Height="100" Stretch="Fill"/>
+                </Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button Name="hairfront3" Click="hairfront3_Click">
+                    <Image Source="Assets/DressUp/Icon/hairfront3_icon.png" Width="100" Height="100" Stretch="Fill"/>
+                </Button>
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel Visibility="Collapsed" Name="HairBackCategory" Grid.Column="6" HorizontalAlignment="Center" VerticalAlignment="Stretch" Orientation="Vertical" Background="DeepPink" Margin="30,30,30,30">
+            <StackPanel Orientation="Horizontal">
+                <Button Name="hairback1" Click="hairback1_Click">
+                    <Image Source="Assets/DressUp/Icon/hairback1_icon.png" Width="100" Height="100" Stretch="Fill"/>
+                </Button>
+                <Button Name="hairback2" Click="hairback2_Click">
+                    <Image Source="Assets/DressUp/Icon/hairback2_icon.png" Width="100" Height="100" Stretch="Fill"/>
+                </Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button Name="hairback3" Click="hairback3_Click">
+                    <Image Source="Assets/DressUp/Icon/hairback3_icon.png" Width="100" Height="100" Stretch="Fill"/>
+                </Button>
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel Visibility="Collapsed" Name="TopCategory" Grid.Column="6" HorizontalAlignment="Center" VerticalAlignment="Stretch" Orientation="Vertical" Background="DeepPink" Margin="30,30,30,30">
+            <StackPanel Orientation="Horizontal">
+                <Button Name="top1" Click="top1_Click">
+                    <Image Source="Assets/DressUp/Icon/top1_icon.png" Width="100" Height="100" Stretch="Fill"/>
+                </Button>
+                <Button Name="top2" Click="top2_Click">
+                    <Image Source="Assets/DressUp/Icon/top2_icon.png" Width="100" Height="100" Stretch="Fill"/>
+                </Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button Name="top3" Click="top3_Click">
+                    <Image Source="Assets/DressUp/Icon/top3_icon.png" Width="100" Height="100" Stretch="Fill"/>
+                </Button>
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel Visibility="Collapsed" Name="BottomCategory" Grid.Column="6" HorizontalAlignment="Center" VerticalAlignment="Stretch" Orientation="Vertical" Background="DeepPink" Margin="30,30,30,30">
+            <StackPanel Orientation="Horizontal">
+                <Button Name="bottom1" Click="bottom1_Click">
+                    <Image Source="Assets/DressUp/Icon/bottom1_icon.png" Width="100" Height="100" Stretch="Fill"/>
+                </Button>
+                <Button Name="bottom2" Click="bottom2_Click">
+                    <Image Source="Assets/DressUp/Icon/bottom2_icon.png" Width="100" Height="100" Stretch="Fill"/>
+                </Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button Name="bottom3" Click="bottom3_Click">
+                    <Image Source="Assets/DressUp/Icon/bottom3_icon.png" Width="100" Height="100" Stretch="Fill"/>
+                </Button>
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel Visibility="Collapsed" Name="SuitCategory" Grid.Column="6" HorizontalAlignment="Center" VerticalAlignment="Stretch" Orientation="Vertical" Background="DeepPink" Margin="30,30,30,30">
+            <StackPanel Orientation="Horizontal">
+                <Button Name="suit1" Click="suit1_Click">
+                    <Image Source="Assets/DressUp/Icon/suit1_icon.png" Width="100" Height="100" Stretch="Fill"/>
+                </Button>
+                <Button Name="suit2" Click="suit2_Click">
+                    <Image Source="Assets/DressUp/Icon/suit2_icon.png" Width="100" Height="100" Stretch="Fill"/>
+                </Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button Name="suit3" Click="suit3_Click">
+                    <Image Source="Assets/DressUp/Icon/suit3_icon.png" Width="100" Height="100" Stretch="Fill"/>
+                </Button>
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel Visibility="Collapsed" Name="ShoesCategory" Grid.Column="6" HorizontalAlignment="Center" VerticalAlignment="Stretch" Orientation="Vertical" Background="DeepPink" Margin="30,30,30,30">
+            <StackPanel Orientation="Horizontal">
+                <Button Name="shoes1" Click="shoes1_Click">
+                    <Image Source="Assets/DressUp/Icon/shoes1_icon.png" Width="100" Height="100" Stretch="Fill"/>
+                </Button>
+                <Button Name="shoes2" Click="shoes2_Click">
+                    <Image Source="Assets/DressUp/Icon/shoes2_icon.png" Width="100" Height="100" Stretch="Fill"/>
+                </Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel Name="categories" Grid.Column="5" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Background="DeepPink" Margin="20,20,0,20">
+            <Button Name="bOne" Width="90" Height="90" Click="bOne_Click">
+                <Image Source="Assets/DressUp/Categories/body_cat.png" Stretch="Fill" ></Image>
+            </Button>
+            <Button Name ="bTwo" Width="90" Height="90" Click="bTwo_Click">
+                <Image Source="Assets/DressUp/Categories/eyes_cat.png" Stretch="Fill" ></Image>
+            </Button>
+            <Button Name="bThree" Width="90" Height="90" Click="bThree_Click">
+                <Image Source="Assets/DressUp/Categories/mouth_cat.png" Stretch="Fill" ></Image>
+            </Button>
+            <Button Name="bFour" Width="90" Height="90" Click="bFour_Click">
+                <Image Source="Assets/DressUp/Categories/hairfront_cat.png" Stretch="Fill" ></Image>
+            </Button>
+            <Button Name="bFive" Width="90" Height="90" Click="bFive_Click">
+                <Image Source="Assets/DressUp/Categories/hairback_cat.png" Stretch="Fill" ></Image>
+            </Button>
+            <Button Name="bSix" Width="90" Height="90" Click="bSix_Click">
+                <Image Source="Assets/DressUp/Categories/top_cat.png" Stretch="Fill" ></Image>
+            </Button>
+            <Button Name="bSeven" Width="90" Height="90" Click="bSeven_Click">
+                <Image Source="Assets/DressUp/Categories/bottom_cat.png" Stretch="Fill" ></Image>
+            </Button>
+            <Button Name="bEight" Width="90" Height="90" Click="bEight_Click">
+                <Image Source="Assets/DressUp/Categories/suit_cat.png" Stretch="Fill" ></Image>
+            </Button>
+            <Button Name="bNine" Width="90" Height="90" Click="bNine_Click">
+                <Image Source="Assets/DressUp/Categories/shoes_cat.png" Stretch="Fill" ></Image>
+            </Button>
+        </StackPanel>
+        
+        <StackPanel Grid.Column="0" Padding="20" VerticalAlignment="Bottom">
+            <StackPanel>
+                <Button x:Uid="Reset" Style="{StaticResource ButtonStyle}" Foreground="Black" Content="Reset" Name="bDReset" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  FontFamily="Ink free" FontSize="50"  Click="bDReset_Click"/>
+                <Button x:Uid="Save" Style="{StaticResource ButtonStyle}" Foreground="Black" Content="Save" Name="bDSave" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  FontFamily="Ink free" FontSize="50"  Click="bDSave_Click"/>
+                <Button x:Uid="Back" Style="{StaticResource ButtonStyle}" Foreground="Black" Content="Back" Name="bDBack" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  FontFamily="Ink free" FontSize="50"  Click="bDBack_Click"/>
+            </StackPanel>
+            <TextBlock FontSize="30"></TextBlock>
+            <StackPanel Background="DeepPink" Name="ColorPalette">
+                <StackPanel Orientation="Horizontal">
+                    <Button Name="red" Background="#FF7794" Height="60" Width="60" Margin="10,10,10,10" Click="red_Click"></Button>
+                    <Button Name="orange" Background="#FFCCB4" Height="60" Width="60" Margin="10,10,10,10" Click="orange_Click"></Button>
+                    <Button Name="yellow"  Background="#FFF8D0" Height="60" Width="60" Margin="10,10,10,10" Click="yellow_Click"></Button>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Button Name="green" Background="#BAEBE2" Height="60" Width="60" Margin="10,10,10,10" Click="green_Click"></Button>
+                    <Button Name="lightblue" Background="#CFFAFD" Height="60" Width="60" Margin="10,10,10,10" Click="lightblue_Click"></Button>
+                    <Button Name="darkblue" Background="#9CD9FE" Height="60" Width="60" Margin="10,10,10,10" Click="darkblue_Click"></Button>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Button Name="purple" Background="#BFC9FE" Height="60" Width="60" Margin="10,10,10,10" Click="purple_Click"></Button>
+                    <Button Name="lightpink" Background="#F3DDFF" Height="60" Width="60" Margin="10,10,10,10" Click="lightpink_Click"></Button>
+                    <Button Name="darkpink" Background="#FEBEEC" Height="60" Width="60" Margin="10,10,10,10" Click="darkpink_Click"></Button>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+
+                    <Button Name="beige" Background="#FECEC7" Height="60" Width="60" Margin="10,10,10,10" Click="beige_Click"></Button>
+                    <Button Name="white" Background="#f9f9f9" Height="60" Width="60" Margin="10,10,10,10" Click="white_Click"></Button>
+                    <Button Name="black" Background="#333333" Height="60" Width="60" Margin="10,10,10,10" Click="black_Click"></Button>
+                </StackPanel>
+            </StackPanel>            
+        </StackPanel>
+
+        <Canvas Name="dressUpCanvas" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="800" Height="800">
+            <Canvas.Background>
+                <SolidColorBrush Color="Transparent"/>
+            </Canvas.Background>
+            <Image Name="eyes" Stretch="Fill" VerticalAlignment="Center" HorizontalAlignment="Center" Canvas.ZIndex="3" Width="800" Height="800"></Image>
+            <Image Name="body" Source="Assets/DressUp/BodyCategory/body_white.png" Stretch="Fill" VerticalAlignment="Center" HorizontalAlignment="Center" Canvas.ZIndex="1" Width="800" Height="800"></Image>
+            <Image Name="mouth" Stretch="Fill" VerticalAlignment="Center" HorizontalAlignment="Center" Canvas.ZIndex="3" Width="800" Height="800"></Image>
+            <Image Name="hairfront" Stretch="Fill" VerticalAlignment="Center" HorizontalAlignment="Center" Canvas.ZIndex="2" Width="800" Height="800"></Image>
+            <Image Name="hairback" Stretch="Fill" VerticalAlignment="Center" HorizontalAlignment="Center" Canvas.ZIndex="0" Width="800" Height="800"></Image>
+            <Image Name="top" Stretch="Fill" VerticalAlignment="Center" HorizontalAlignment="Center" Canvas.ZIndex="5" Width="800" Height="800"></Image>
+            <Image Name="bottom" Stretch="Fill" VerticalAlignment="Center" HorizontalAlignment="Center" Canvas.ZIndex="4" Width="800" Height="800"></Image>
+            <Image Name="suit" Stretch="Fill" VerticalAlignment="Center" HorizontalAlignment="Center" Canvas.ZIndex="4" Width="800" Height="800"></Image>
+            <Image Name="shoes" Stretch="Fill" VerticalAlignment="Center" HorizontalAlignment="Center" Canvas.ZIndex="1" Width="800" Height="800"></Image>
+        </Canvas>
+
+    </Grid>
+</Page>

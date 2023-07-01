@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="pl-PL" original="COLORINGANDDRESSUP/STRINGS/EN-US/RESOURCES.RESW" tool-id="MultilingualAppToolkit" product-name="n/a" product-version="n/a" build-num="n/a">
+    <header>
+      <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="1.0.0.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="COLORINGANDDRESSUP/STRINGS/EN-US/RESOURCES.RESW" datatype="resx">
+        <trans-unit id="Back.Content" translate="yes" xml:space="preserve">
+          <source>Return</source>
+          <target state="final" state-qualifier="tm-suggestion">Wstecz</target>
+        </trans-unit>
+        <trans-unit id="BrushSize.Text" translate="yes" xml:space="preserve">
+          <source>Brush size</source>
+          <target state="final">Rozmiar pędzla</target>
+        </trans-unit>
+        <trans-unit id="Coloring.Content" translate="yes" xml:space="preserve">
+          <source>Coloring</source>
+          <target state="final">Kolorowanki</target>
+        </trans-unit>
+        <trans-unit id="Creators.Content" translate="yes" xml:space="preserve">
+          <source>Creators</source>
+          <target state="final" state-qualifier="tm-suggestion">Twórcy</target>
+        </trans-unit>
+        <trans-unit id="Dressup.Content" translate="yes" xml:space="preserve">
+          <source>Dress-Up</source>
+          <target state="final">Ubieranka</target>
+        </trans-unit>
+        <trans-unit id="English.Text" translate="yes" xml:space="preserve">
+          <source>English</source>
+          <target state="final" state-qualifier="tm-suggestion">Angielski</target>
+        </trans-unit>
+        <trans-unit id="Exit.Content" translate="yes" xml:space="preserve">
+          <source>Exit</source>
+          <target state="final" state-qualifier="tm-suggestion">Zakończ</target>
+        </trans-unit>
+        <trans-unit id="German.Text" translate="yes" xml:space="preserve">
+          <source>German</source>
+          <target state="final" state-qualifier="tm-suggestion">Niemiecki</target>
+        </trans-unit>
+        <trans-unit id="Graphics.Text" translate="yes" xml:space="preserve">
+          <source>Graphics:</source>
+          <target state="final">Grafiki:</target>
+        </trans-unit>
+        <trans-unit id="Language.Text" translate="yes" xml:space="preserve">
+          <source>Language:</source>
+          <target state="final" state-qualifier="tm-suggestion">Język</target>
+        </trans-unit>
+        <trans-unit id="Music.Text" translate="yes" xml:space="preserve">
+          <source>Music:</source>
+          <target state="final">Muzyka:</target>
+        </trans-unit>
+        <trans-unit id="Polish.Text" translate="yes" xml:space="preserve">
+          <source>Polish</source>
+          <target state="final" state-qualifier="tm-suggestion">Polski</target>
+        </trans-unit>
+        <trans-unit id="Programming.Text" translate="yes" xml:space="preserve">
+          <source>Programming:</source>
+          <target state="final">Programowanie:</target>
+        </trans-unit>
+        <trans-unit id="Reset.Content" translate="yes" xml:space="preserve">
+          <source>Reset</source>
+          <target state="final" state-qualifier="tm-suggestion">Resetuj</target>
+        </trans-unit>
+        <trans-unit id="Rubber.Text" translate="yes" xml:space="preserve">
+          <source>Eraser</source>
+          <target state="final">Gumka</target>
+        </trans-unit>
+        <trans-unit id="Save.Content" translate="yes" xml:space="preserve">
+          <source>Save</source>
+          <target state="final" state-qualifier="tm-suggestion">Zapisz</target>
+        </trans-unit>
+        <trans-unit id="Settings.Content" translate="yes" xml:space="preserve">
+          <source>Settings</source>
+          <target state="final" state-qualifier="tm-suggestion">Ustawienia</target>
+        </trans-unit>
+        <trans-unit id="Undo.Text" translate="yes" xml:space="preserve">
+          <source>Undo</source>
+          <target state="final" state-qualifier="tm-suggestion">Cofnij</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

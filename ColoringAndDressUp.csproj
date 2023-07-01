@@ -1,0 +1,579 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{8D0DF8A9-87C3-46B2-A135-2B305FEA2FF4}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ColoringAndDressUp</RootNamespace>
+    <AssemblyName>ColoringAndDressUp</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.19041.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WindowsXamlEnableOverview>true</WindowsXamlEnableOverview>
+    <AppxPackageSigningEnabled>false</AppxPackageSigningEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM64'">
+    <OutputPath>bin\ARM64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ColoringPage1.xaml.cs">
+      <DependentUpon>ColoringPage1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ColoringPages.xaml.cs">
+      <DependentUpon>ColoringPages.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DressUp.xaml.cs">
+      <DependentUpon>DressUp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\SaveImage.cs" />
+    <Compile Include="GUI\SetFullscreen.cs" />
+    <Compile Include="GUI\Sound.cs" />
+    <Compile Include="CreatorsPage.xaml.cs">
+      <DependentUpon>CreatorsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\BadgeLogo.scale-100.png" />
+    <Content Include="Assets\BadgeLogo.scale-125.png" />
+    <Content Include="Assets\BadgeLogo.scale-150.png" />
+    <Content Include="Assets\BadgeLogo.scale-200.png" />
+    <Content Include="Assets\BadgeLogo.scale-400.png" />
+    <Content Include="Assets\Coloring\ColoringPages\Coloring1.png" />
+    <Content Include="Assets\Coloring\ColoringPages\Coloring2.png" />
+    <Content Include="Assets\Coloring\ColoringPages\Coloring3.png" />
+    <Content Include="Assets\Coloring\ColoringPages\Coloring4.png" />
+    <Content Include="Assets\Coloring\ColoringPages\Coloring5.png" />
+    <Content Include="Assets\Coloring\ColoringPages\Coloring6.png" />
+    <Content Include="Assets\DressUp\blank.png" />
+    <Content Include="Assets\DressUp\BodyCategory\body_beige.png" />
+    <Content Include="Assets\DressUp\BodyCategory\body_black.png" />
+    <Content Include="Assets\DressUp\BodyCategory\body_darkblue.png" />
+    <Content Include="Assets\DressUp\BodyCategory\body_darkpink.png" />
+    <Content Include="Assets\DressUp\BodyCategory\body_green.png" />
+    <Content Include="Assets\DressUp\BodyCategory\body_lightblue.png" />
+    <Content Include="Assets\DressUp\BodyCategory\body_lightpink.png" />
+    <Content Include="Assets\DressUp\BodyCategory\body_orange.png" />
+    <Content Include="Assets\DressUp\BodyCategory\body_purple.png" />
+    <Content Include="Assets\DressUp\BodyCategory\body_red.png" />
+    <Content Include="Assets\DressUp\BodyCategory\body_white.png" />
+    <Content Include="Assets\DressUp\BodyCategory\body_yellow.png" />
+    <Content Include="Assets\DressUp\BottomCategory\bottom1_beige.png" />
+    <Content Include="Assets\DressUp\BottomCategory\bottom1_black.png" />
+    <Content Include="Assets\DressUp\BottomCategory\bottom1_darkblue.png" />
+    <Content Include="Assets\DressUp\BottomCategory\bottom1_darkpink.png" />
+    <Content Include="Assets\DressUp\BottomCategory\bottom1_green.png" />
+    <Content Include="Assets\DressUp\BottomCategory\bottom1_lightblue.png" />
+    <Content Include="Assets\DressUp\BottomCategory\bottom1_lightpink.png" />
+    <Content Include="Assets\DressUp\BottomCategory\bottom1_orange.png" />
+    <Content Include="Assets\DressUp\BottomCategory\bottom1_purple.png" />
+    <Content Include="Assets\DressUp\BottomCategory\bottom1_red.png" />
+    <Content Include="Assets\DressUp\BottomCategory\bottom1_white.png" />
+    <Content Include="Assets\DressUp\BottomCategory\bottom1_yellow.png" />
+    <Content Include="Assets\DressUp\BottomCategory\bottom2_beige.png" />
+    <Content Include="Assets\DressUp\BottomCategory\bottom2_black.png" />
+    <Content Include="Assets\DressUp\BottomCategory\bottom2_darkblue.png" />
+    <Content Include="Assets\DressUp\BottomCategory\bottom2_darkpink.png" />
+    <Content Include="Assets\DressUp\BottomCategory\bottom2_green.png" />
+    <Content Include="Assets\DressUp\BottomCategory\bottom2_lightblue.png" />
+    <Content Include="Assets\DressUp\BottomCategory\bottom2_lightpink.png" />
+    <Content Include="Assets\DressUp\BottomCategory\bottom2_orange.png" />
+    <Content Include="Assets\DressUp\BottomCategory\bottom2_purple.png" />
+    <Content Include="Assets\DressUp\BottomCategory\bottom2_red.png" />
+    <Content Include="Assets\DressUp\BottomCategory\bottom2_white.png" />
+    <Content Include="Assets\DressUp\BottomCategory\bottom2_yellow.png" />
+    <Content Include="Assets\DressUp\BottomCategory\bottom3_beige.png" />
+    <Content Include="Assets\DressUp\BottomCategory\bottom3_black.png" />
+    <Content Include="Assets\DressUp\BottomCategory\bottom3_darkblue.png" />
+    <Content Include="Assets\DressUp\BottomCategory\bottom3_darkpink.png" />
+    <Content Include="Assets\DressUp\BottomCategory\bottom3_green.png" />
+    <Content Include="Assets\DressUp\BottomCategory\bottom3_lightblue.png" />
+    <Content Include="Assets\DressUp\BottomCategory\bottom3_lightpink.png" />
+    <Content Include="Assets\DressUp\BottomCategory\bottom3_orange.png" />
+    <Content Include="Assets\DressUp\BottomCategory\bottom3_purple.png" />
+    <Content Include="Assets\DressUp\BottomCategory\bottom3_red.png" />
+    <Content Include="Assets\DressUp\BottomCategory\bottom3_white.png" />
+    <Content Include="Assets\DressUp\BottomCategory\bottom3_yellow.png" />
+    <Content Include="Assets\DressUp\Categories\body_cat.png" />
+    <Content Include="Assets\DressUp\Categories\bottom_cat.png" />
+    <Content Include="Assets\DressUp\Categories\eyes_cat.png" />
+    <Content Include="Assets\DressUp\Categories\hairback_cat.png" />
+    <Content Include="Assets\DressUp\Categories\hairfront_cat.png" />
+    <Content Include="Assets\DressUp\Categories\mouth_cat.png" />
+    <Content Include="Assets\DressUp\Categories\shoes_cat.png" />
+    <Content Include="Assets\DressUp\Categories\suit_cat.png" />
+    <Content Include="Assets\DressUp\Categories\top_cat.png" />
+    <Content Include="Assets\DressUp\EyesCategory\eyes1_beige.png" />
+    <Content Include="Assets\DressUp\EyesCategory\eyes1_black.png" />
+    <Content Include="Assets\DressUp\EyesCategory\eyes1_darkblue.png" />
+    <Content Include="Assets\DressUp\EyesCategory\eyes1_darkpink.png" />
+    <Content Include="Assets\DressUp\EyesCategory\eyes1_green.png" />
+    <Content Include="Assets\DressUp\EyesCategory\eyes1_lightblue.png" />
+    <Content Include="Assets\DressUp\EyesCategory\eyes1_lightpink.png" />
+    <Content Include="Assets\DressUp\EyesCategory\eyes1_orange.png" />
+    <Content Include="Assets\DressUp\EyesCategory\eyes1_purple.png" />
+    <Content Include="Assets\DressUp\EyesCategory\eyes1_red.png" />
+    <Content Include="Assets\DressUp\EyesCategory\eyes1_white.png" />
+    <Content Include="Assets\DressUp\EyesCategory\eyes1_yellow.png" />
+    <Content Include="Assets\DressUp\EyesCategory\eyes2_beige.png" />
+    <Content Include="Assets\DressUp\EyesCategory\eyes2_black.png" />
+    <Content Include="Assets\DressUp\EyesCategory\eyes2_darkblue.png" />
+    <Content Include="Assets\DressUp\EyesCategory\eyes2_darkpink.png" />
+    <Content Include="Assets\DressUp\EyesCategory\eyes2_green.png" />
+    <Content Include="Assets\DressUp\EyesCategory\eyes2_lightblue.png" />
+    <Content Include="Assets\DressUp\EyesCategory\eyes2_lightpink.png" />
+    <Content Include="Assets\DressUp\EyesCategory\eyes2_orange.png" />
+    <Content Include="Assets\DressUp\EyesCategory\eyes2_purple.png" />
+    <Content Include="Assets\DressUp\EyesCategory\eyes2_red.png" />
+    <Content Include="Assets\DressUp\EyesCategory\eyes2_white.png" />
+    <Content Include="Assets\DressUp\EyesCategory\eyes2_yellow.png" />
+    <Content Include="Assets\DressUp\EyesCategory\eyes3_beige.png" />
+    <Content Include="Assets\DressUp\EyesCategory\eyes3_black.png" />
+    <Content Include="Assets\DressUp\EyesCategory\eyes3_darkblue.png" />
+    <Content Include="Assets\DressUp\EyesCategory\eyes3_darkpink.png" />
+    <Content Include="Assets\DressUp\EyesCategory\eyes3_green.png" />
+    <Content Include="Assets\DressUp\EyesCategory\eyes3_lightblue.png" />
+    <Content Include="Assets\DressUp\EyesCategory\eyes3_lightpink.png" />
+    <Content Include="Assets\DressUp\EyesCategory\eyes3_orange.png" />
+    <Content Include="Assets\DressUp\EyesCategory\eyes3_purple.png" />
+    <Content Include="Assets\DressUp\EyesCategory\eyes3_red.png" />
+    <Content Include="Assets\DressUp\EyesCategory\eyes3_white.png" />
+    <Content Include="Assets\DressUp\EyesCategory\eyes3_yellow.png" />
+    <Content Include="Assets\DressUp\HairBackCategory\hairback1_beige.png" />
+    <Content Include="Assets\DressUp\HairBackCategory\hairback1_black.png" />
+    <Content Include="Assets\DressUp\HairBackCategory\hairback1_darkblue.png" />
+    <Content Include="Assets\DressUp\HairBackCategory\hairback1_darkpink.png" />
+    <Content Include="Assets\DressUp\HairBackCategory\hairback1_green.png" />
+    <Content Include="Assets\DressUp\HairBackCategory\hairback1_lightblue.png" />
+    <Content Include="Assets\DressUp\HairBackCategory\hairback1_lightpink.png" />
+    <Content Include="Assets\DressUp\HairBackCategory\hairback1_orange.png" />
+    <Content Include="Assets\DressUp\HairBackCategory\hairback1_purple.png" />
+    <Content Include="Assets\DressUp\HairBackCategory\hairback1_red.png" />
+    <Content Include="Assets\DressUp\HairBackCategory\hairback1_white.png" />
+    <Content Include="Assets\DressUp\HairBackCategory\hairback1_yellow.png" />
+    <Content Include="Assets\DressUp\HairBackCategory\hairback2_beige.png" />
+    <Content Include="Assets\DressUp\HairBackCategory\hairback2_black.png" />
+    <Content Include="Assets\DressUp\HairBackCategory\hairback2_darkblue.png" />
+    <Content Include="Assets\DressUp\HairBackCategory\hairback2_darkpink.png" />
+    <Content Include="Assets\DressUp\HairBackCategory\hairback2_green.png" />
+    <Content Include="Assets\DressUp\HairBackCategory\hairback2_lightblue.png" />
+    <Content Include="Assets\DressUp\HairBackCategory\hairback2_lightpink.png" />
+    <Content Include="Assets\DressUp\HairBackCategory\hairback2_orange.png" />
+    <Content Include="Assets\DressUp\HairBackCategory\hairback2_purple.png" />
+    <Content Include="Assets\DressUp\HairBackCategory\hairback2_red.png" />
+    <Content Include="Assets\DressUp\HairBackCategory\hairback2_white.png" />
+    <Content Include="Assets\DressUp\HairBackCategory\hairback2_yellow.png" />
+    <Content Include="Assets\DressUp\HairBackCategory\hairback3_beige.png" />
+    <Content Include="Assets\DressUp\HairBackCategory\hairback3_black.png" />
+    <Content Include="Assets\DressUp\HairBackCategory\hairback3_darkblue.png" />
+    <Content Include="Assets\DressUp\HairBackCategory\hairback3_darkpink.png" />
+    <Content Include="Assets\DressUp\HairBackCategory\hairback3_green.png" />
+    <Content Include="Assets\DressUp\HairBackCategory\hairback3_lightblue.png" />
+    <Content Include="Assets\DressUp\HairBackCategory\hairback3_lightpink.png" />
+    <Content Include="Assets\DressUp\HairBackCategory\hairback3_orange.png" />
+    <Content Include="Assets\DressUp\HairBackCategory\hairback3_purple.png" />
+    <Content Include="Assets\DressUp\HairBackCategory\hairback3_red.png" />
+    <Content Include="Assets\DressUp\HairBackCategory\hairback3_white.png" />
+    <Content Include="Assets\DressUp\HairBackCategory\hairback3_yellow.png" />
+    <Content Include="Assets\DressUp\HairFrontCategory\hairfront1_beige.png" />
+    <Content Include="Assets\DressUp\HairFrontCategory\hairfront1_black.png" />
+    <Content Include="Assets\DressUp\HairFrontCategory\hairfront1_darkblue.png" />
+    <Content Include="Assets\DressUp\HairFrontCategory\hairfront1_darkpink.png" />
+    <Content Include="Assets\DressUp\HairFrontCategory\hairfront1_green.png" />
+    <Content Include="Assets\DressUp\HairFrontCategory\hairfront1_lightblue.png" />
+    <Content Include="Assets\DressUp\HairFrontCategory\hairfront1_lightpink.png" />
+    <Content Include="Assets\DressUp\HairFrontCategory\hairfront1_orange.png" />
+    <Content Include="Assets\DressUp\HairFrontCategory\hairfront1_purple.png" />
+    <Content Include="Assets\DressUp\HairFrontCategory\hairfront1_red.png" />
+    <Content Include="Assets\DressUp\HairFrontCategory\hairfront1_white.png" />
+    <Content Include="Assets\DressUp\HairFrontCategory\hairfront1_yellow.png" />
+    <Content Include="Assets\DressUp\HairFrontCategory\hairfront2_beige.png" />
+    <Content Include="Assets\DressUp\HairFrontCategory\hairfront2_black.png" />
+    <Content Include="Assets\DressUp\HairFrontCategory\hairfront2_darkblue.png" />
+    <Content Include="Assets\DressUp\HairFrontCategory\hairfront2_darkpink.png" />
+    <Content Include="Assets\DressUp\HairFrontCategory\hairfront2_green.png" />
+    <Content Include="Assets\DressUp\HairFrontCategory\hairfront2_lightblue.png" />
+    <Content Include="Assets\DressUp\HairFrontCategory\hairfront2_lightpink.png" />
+    <Content Include="Assets\DressUp\HairFrontCategory\hairfront2_orange.png" />
+    <Content Include="Assets\DressUp\HairFrontCategory\hairfront2_purple.png" />
+    <Content Include="Assets\DressUp\HairFrontCategory\hairfront2_red.png" />
+    <Content Include="Assets\DressUp\HairFrontCategory\hairfront2_white.png" />
+    <Content Include="Assets\DressUp\HairFrontCategory\hairfront2_yellow.png" />
+    <Content Include="Assets\DressUp\HairFrontCategory\hairfront3_beige.png" />
+    <Content Include="Assets\DressUp\HairFrontCategory\hairfront3_black.png" />
+    <Content Include="Assets\DressUp\HairFrontCategory\hairfront3_darkblue.png" />
+    <Content Include="Assets\DressUp\HairFrontCategory\hairfront3_darkpink.png" />
+    <Content Include="Assets\DressUp\HairFrontCategory\hairfront3_green.png" />
+    <Content Include="Assets\DressUp\HairFrontCategory\hairfront3_lightblue.png" />
+    <Content Include="Assets\DressUp\HairFrontCategory\hairfront3_lightpink.png" />
+    <Content Include="Assets\DressUp\HairFrontCategory\hairfront3_orange.png" />
+    <Content Include="Assets\DressUp\HairFrontCategory\hairfront3_purple.png" />
+    <Content Include="Assets\DressUp\HairFrontCategory\hairfront3_red.png" />
+    <Content Include="Assets\DressUp\HairFrontCategory\hairfront3_white.png" />
+    <Content Include="Assets\DressUp\HairFrontCategory\hairfront3_yellow.png" />
+    <Content Include="Assets\DressUp\Icon\body_icon.png" />
+    <Content Include="Assets\DressUp\Icon\bottom1_icon.png" />
+    <Content Include="Assets\DressUp\Icon\bottom2_icon.png" />
+    <Content Include="Assets\DressUp\Icon\bottom3_icon.png" />
+    <Content Include="Assets\DressUp\Icon\eyes1_icon.png" />
+    <Content Include="Assets\DressUp\Icon\eyes2_icon.png" />
+    <Content Include="Assets\DressUp\Icon\eyes3_icon.png" />
+    <Content Include="Assets\DressUp\Icon\hairback1_icon.png" />
+    <Content Include="Assets\DressUp\Icon\hairback2_icon.png" />
+    <Content Include="Assets\DressUp\Icon\hairback3_icon.png" />
+    <Content Include="Assets\DressUp\Icon\hairfront1_icon.png" />
+    <Content Include="Assets\DressUp\Icon\hairfront2_icon.png" />
+    <Content Include="Assets\DressUp\Icon\hairfront3_icon.png" />
+    <Content Include="Assets\DressUp\Icon\mouth1_icon.png" />
+    <Content Include="Assets\DressUp\Icon\mouth2_icon.png" />
+    <Content Include="Assets\DressUp\Icon\mouth3_icon.png" />
+    <Content Include="Assets\DressUp\Icon\shoes1_icon.png" />
+    <Content Include="Assets\DressUp\Icon\shoes2_icon.png" />
+    <Content Include="Assets\DressUp\Icon\suit1_icon.png" />
+    <Content Include="Assets\DressUp\Icon\suit2_icon.png" />
+    <Content Include="Assets\DressUp\Icon\suit3_icon.png" />
+    <Content Include="Assets\DressUp\Icon\top1_icon.png" />
+    <Content Include="Assets\DressUp\Icon\top2_icon.png" />
+    <Content Include="Assets\DressUp\Icon\top3_icon.png" />
+    <Content Include="Assets\DressUp\MouthCategory\mouth1.png" />
+    <Content Include="Assets\DressUp\MouthCategory\mouth2.png" />
+    <Content Include="Assets\DressUp\MouthCategory\mouth3.png" />
+    <Content Include="Assets\DressUp\ShoesCategory\shoes1_beige.png" />
+    <Content Include="Assets\DressUp\ShoesCategory\shoes1_black.png" />
+    <Content Include="Assets\DressUp\ShoesCategory\shoes1_darkblue.png" />
+    <Content Include="Assets\DressUp\ShoesCategory\shoes1_darkpink.png" />
+    <Content Include="Assets\DressUp\ShoesCategory\shoes1_green.png" />
+    <Content Include="Assets\DressUp\ShoesCategory\shoes1_lightblue.png" />
+    <Content Include="Assets\DressUp\ShoesCategory\shoes1_lightpink.png" />
+    <Content Include="Assets\DressUp\ShoesCategory\shoes1_orange.png" />
+    <Content Include="Assets\DressUp\ShoesCategory\shoes1_purple.png" />
+    <Content Include="Assets\DressUp\ShoesCategory\shoes1_red.png" />
+    <Content Include="Assets\DressUp\ShoesCategory\shoes1_white.png" />
+    <Content Include="Assets\DressUp\ShoesCategory\shoes1_yellow.png" />
+    <Content Include="Assets\DressUp\ShoesCategory\shoes2_beige.png" />
+    <Content Include="Assets\DressUp\ShoesCategory\shoes2_black.png" />
+    <Content Include="Assets\DressUp\ShoesCategory\shoes2_darkblue.png" />
+    <Content Include="Assets\DressUp\ShoesCategory\shoes2_darkpink.png" />
+    <Content Include="Assets\DressUp\ShoesCategory\shoes2_green.png" />
+    <Content Include="Assets\DressUp\ShoesCategory\shoes2_lightblue.png" />
+    <Content Include="Assets\DressUp\ShoesCategory\shoes2_lightpink.png" />
+    <Content Include="Assets\DressUp\ShoesCategory\shoes2_orange.png" />
+    <Content Include="Assets\DressUp\ShoesCategory\shoes2_purple.png" />
+    <Content Include="Assets\DressUp\ShoesCategory\shoes2_red.png" />
+    <Content Include="Assets\DressUp\ShoesCategory\shoes2_white.png" />
+    <Content Include="Assets\DressUp\ShoesCategory\shoes2_yellow.png" />
+    <Content Include="Assets\DressUp\SuitCategory\suit1_beige.png" />
+    <Content Include="Assets\DressUp\SuitCategory\suit1_black.png" />
+    <Content Include="Assets\DressUp\SuitCategory\suit1_darkblue.png" />
+    <Content Include="Assets\DressUp\SuitCategory\suit1_darkpink.png" />
+    <Content Include="Assets\DressUp\SuitCategory\suit1_green.png" />
+    <Content Include="Assets\DressUp\SuitCategory\suit1_lightblue.png" />
+    <Content Include="Assets\DressUp\SuitCategory\suit1_lightpink.png" />
+    <Content Include="Assets\DressUp\SuitCategory\suit1_orange.png" />
+    <Content Include="Assets\DressUp\SuitCategory\suit1_purple.png" />
+    <Content Include="Assets\DressUp\SuitCategory\suit1_red.png" />
+    <Content Include="Assets\DressUp\SuitCategory\suit1_white.png" />
+    <Content Include="Assets\DressUp\SuitCategory\suit1_yellow.png" />
+    <Content Include="Assets\DressUp\SuitCategory\suit2_beige.png" />
+    <Content Include="Assets\DressUp\SuitCategory\suit2_black.png" />
+    <Content Include="Assets\DressUp\SuitCategory\suit2_darkblue.png" />
+    <Content Include="Assets\DressUp\SuitCategory\suit2_darkpink.png" />
+    <Content Include="Assets\DressUp\SuitCategory\suit2_green.png" />
+    <Content Include="Assets\DressUp\SuitCategory\suit2_lightblue.png" />
+    <Content Include="Assets\DressUp\SuitCategory\suit2_lightpink.png" />
+    <Content Include="Assets\DressUp\SuitCategory\suit2_orange.png" />
+    <Content Include="Assets\DressUp\SuitCategory\suit2_purple.png" />
+    <Content Include="Assets\DressUp\SuitCategory\suit2_red.png" />
+    <Content Include="Assets\DressUp\SuitCategory\suit2_white.png" />
+    <Content Include="Assets\DressUp\SuitCategory\suit2_yellow.png" />
+    <Content Include="Assets\DressUp\SuitCategory\suit3_beige.png" />
+    <Content Include="Assets\DressUp\SuitCategory\suit3_black.png" />
+    <Content Include="Assets\DressUp\SuitCategory\suit3_darkblue.png" />
+    <Content Include="Assets\DressUp\SuitCategory\suit3_darkpink.png" />
+    <Content Include="Assets\DressUp\SuitCategory\suit3_green.png" />
+    <Content Include="Assets\DressUp\SuitCategory\suit3_lightblue.png" />
+    <Content Include="Assets\DressUp\SuitCategory\suit3_lightpink.png" />
+    <Content Include="Assets\DressUp\SuitCategory\suit3_orange.png" />
+    <Content Include="Assets\DressUp\SuitCategory\suit3_purple.png" />
+    <Content Include="Assets\DressUp\SuitCategory\suit3_red.png" />
+    <Content Include="Assets\DressUp\SuitCategory\suit3_white.png" />
+    <Content Include="Assets\DressUp\SuitCategory\suit3_yellow.png" />
+    <Content Include="Assets\DressUp\TopCategory\top1_beige.png" />
+    <Content Include="Assets\DressUp\TopCategory\top1_black.png" />
+    <Content Include="Assets\DressUp\TopCategory\top1_darkblue.png" />
+    <Content Include="Assets\DressUp\TopCategory\top1_darkpink.png" />
+    <Content Include="Assets\DressUp\TopCategory\top1_green.png" />
+    <Content Include="Assets\DressUp\TopCategory\top1_lightblue.png" />
+    <Content Include="Assets\DressUp\TopCategory\top1_lightpink.png" />
+    <Content Include="Assets\DressUp\TopCategory\top1_orange.png" />
+    <Content Include="Assets\DressUp\TopCategory\top1_purple.png" />
+    <Content Include="Assets\DressUp\TopCategory\top1_red.png" />
+    <Content Include="Assets\DressUp\TopCategory\top1_white.png" />
+    <Content Include="Assets\DressUp\TopCategory\top1_yellow.png" />
+    <Content Include="Assets\DressUp\TopCategory\top2_beige.png" />
+    <Content Include="Assets\DressUp\TopCategory\top2_black.png" />
+    <Content Include="Assets\DressUp\TopCategory\top2_darkblue.png" />
+    <Content Include="Assets\DressUp\TopCategory\top2_darkpink.png" />
+    <Content Include="Assets\DressUp\TopCategory\top2_green.png" />
+    <Content Include="Assets\DressUp\TopCategory\top2_lightblue.png" />
+    <Content Include="Assets\DressUp\TopCategory\top2_lightpink.png" />
+    <Content Include="Assets\DressUp\TopCategory\top2_orange.png" />
+    <Content Include="Assets\DressUp\TopCategory\top2_purple.png" />
+    <Content Include="Assets\DressUp\TopCategory\top2_red.png" />
+    <Content Include="Assets\DressUp\TopCategory\top2_white.png" />
+    <Content Include="Assets\DressUp\TopCategory\top2_yellow.png" />
+    <Content Include="Assets\DressUp\TopCategory\top3_beige.png" />
+    <Content Include="Assets\DressUp\TopCategory\top3_black.png" />
+    <Content Include="Assets\DressUp\TopCategory\top3_darkblue.png" />
+    <Content Include="Assets\DressUp\TopCategory\top3_darkpink.png" />
+    <Content Include="Assets\DressUp\TopCategory\top3_green.png" />
+    <Content Include="Assets\DressUp\TopCategory\top3_lightblue.png" />
+    <Content Include="Assets\DressUp\TopCategory\top3_lightpink.png" />
+    <Content Include="Assets\DressUp\TopCategory\top3_orange.png" />
+    <Content Include="Assets\DressUp\TopCategory\top3_purple.png" />
+    <Content Include="Assets\DressUp\TopCategory\top3_red.png" />
+    <Content Include="Assets\DressUp\TopCategory\top3_white.png" />
+    <Content Include="Assets\DressUp\TopCategory\top3_yellow.png" />
+    <Content Include="Assets\icon.altform-lightunplated_targetsize-16.png" />
+    <Content Include="Assets\icon.altform-lightunplated_targetsize-24.png" />
+    <Content Include="Assets\icon.altform-lightunplated_targetsize-256.png" />
+    <Content Include="Assets\icon.altform-lightunplated_targetsize-32.png" />
+    <Content Include="Assets\icon.altform-lightunplated_targetsize-48.png" />
+    <Content Include="Assets\icon.altform-unplated_targetsize-16.png" />
+    <Content Include="Assets\icon.altform-unplated_targetsize-24.png" />
+    <Content Include="Assets\icon.altform-unplated_targetsize-256.png" />
+    <Content Include="Assets\icon.altform-unplated_targetsize-32.png" />
+    <Content Include="Assets\icon.altform-unplated_targetsize-48.png" />
+    <Content Include="Assets\icon.png" />
+    <Content Include="Assets\icon.scale-100.png" />
+    <Content Include="Assets\icon.scale-125.png" />
+    <Content Include="Assets\icon.scale-150.png" />
+    <Content Include="Assets\icon.scale-200.png" />
+    <Content Include="Assets\icon.scale-400.png" />
+    <Content Include="Assets\icon.targetsize-16.png" />
+    <Content Include="Assets\icon.targetsize-24.png" />
+    <Content Include="Assets\icon.targetsize-256.png" />
+    <Content Include="Assets\icon.targetsize-32.png" />
+    <Content Include="Assets\icon.targetsize-48.png" />
+    <Content Include="Assets\LargeTile.scale-100.png" />
+    <Content Include="Assets\LargeTile.scale-125.png" />
+    <Content Include="Assets\LargeTile.scale-150.png" />
+    <Content Include="Assets\LargeTile.scale-200.png" />
+    <Content Include="Assets\LargeTile.scale-400.png" />
+    <Content Include="Assets\logo.png" />
+    <Content Include="Assets\Sound\Icons\sound_off.png" />
+    <Content Include="Assets\Sound\Icons\sound_on.png" />
+    <Content Include="Assets\Sound\music.wav" />
+    <Content Include="Assets\Sound\press.mp3" />
+    <Content Include="Assets\Coloring\Icons\reset.png" />
+    <Content Include="Assets\Coloring\Icons\rubber.png" />
+    <Content Include="Assets\Coloring\Icons\undo.png" />
+    <Content Include="Assets\SmallTile.scale-100.png" />
+    <Content Include="Assets\SmallTile.scale-125.png" />
+    <Content Include="Assets\SmallTile.scale-150.png" />
+    <Content Include="Assets\SmallTile.scale-200.png" />
+    <Content Include="Assets\SmallTile.scale-400.png" />
+    <Content Include="Assets\SplashScreen.scale-100.png" />
+    <Content Include="Assets\SplashScreen.scale-125.png" />
+    <Content Include="Assets\SplashScreen.scale-150.png" />
+    <Content Include="Assets\SplashScreen.scale-400.png" />
+    <Content Include="Assets\StoreLogo.scale-100.png" />
+    <Content Include="Assets\StoreLogo.scale-125.png" />
+    <Content Include="Assets\StoreLogo.scale-150.png" />
+    <Content Include="Assets\StoreLogo.scale-200.png" />
+    <Content Include="Assets\StoreLogo.scale-400.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-100.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-125.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-150.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-400.png" />
+    <Content Include="Properties\Default.rd.xml" />
+    <Content Include="Assets\LockScreenLogo.scale-200.png" />
+    <Content Include="Assets\SplashScreen.scale-200.png" />
+    <Content Include="Assets\Square150x150Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="ColoringPage1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ColoringPages.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DressUp.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CreatorsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
+      <Version>6.2.14</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="Strings\en-US\Resources.resw" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="Strings\de-DE\Resources.resw" />
+  </ItemGroup>
+  <ItemGroup>
+    <XliffResource Include="MultilingualResources\ColoringAndDressUp.de-DE.xlf" />
+    <XliffResource Include="MultilingualResources\ColoringAndDressUp.ja-JP.xlf" />
+    <XliffResource Include="MultilingualResources\ColoringAndDressUp.pl-PL.xlf" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="Strings\ja-JP\Resources.resw" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="Strings\pl-PL\Resources.resw" />
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'test|x86'">
+    <OutputPath>bin\x86\test\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'test|ARM'">
+    <OutputPath>bin\ARM\test\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'test|ARM64'">
+    <OutputPath>bin\ARM64\test\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'test|x64'">
+    <OutputPath>bin\x64\test\</OutputPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,39 @@
+﻿<Page 
+    x:Class="ColoringAndDressUp.CreatorsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ColoringAndDressUp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            
+            <RowDefinition Height="Auto" ></RowDefinition>
+            <RowDefinition Height="*" ></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="AUto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            
+        </Grid.RowDefinitions>
+
+        <Image Grid.Row="1" Source="/assets/logo.png"></Image>
+        
+        <StackPanel Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Stretch">
+            <TextBlock x:Uid="Programming" Text="Programming:" Name="tProgramming"  FontFamily="Ink free" FontSize="45" Foreground="DeepPink" VerticalAlignment="Center" HorizontalAlignment="Center" ></TextBlock>
+            <TextBlock Text="Emilia Depka, Magdalena Kocimska" FontFamily="Ink free" FontSize="35" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Center" ></TextBlock>
+            <TextBlock Text="" FontFamily="Ink free" FontSize="30" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Center" ></TextBlock>
+            <TextBlock x:Uid="Graphics" Text="Graphics:" Name="tGraphics" FontFamily="Ink free" FontSize="45" Foreground="DeepPink" VerticalAlignment="Center" HorizontalAlignment="Center" ></TextBlock>
+            <TextBlock Text="AzorToonz, Freepik, Looka, Flaticon" FontFamily="Ink free" FontSize="35" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Center" ></TextBlock>
+            <TextBlock Text="" FontFamily="Ink free" FontSize="30" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Center" ></TextBlock>
+            <TextBlock x:Uid="Music" Text="Music:" Name="tMusic" FontFamily="Ink free" FontSize="45" Foreground="DeepPink" VerticalAlignment="Center" HorizontalAlignment="Center" ></TextBlock>
+            <TextBlock Text="RoyaltyFree" FontFamily="Ink free" FontSize="35" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Center" ></TextBlock>
+            
+        </StackPanel>
+
+        <Button x:Uid="Back" Style="{StaticResource ButtonStyle}" Grid.Row="3" Foreground="Black"  Content="🢤 Back" Name="bABack" VerticalAlignment="Center" HorizontalAlignment="Left"  FontFamily="Ink free" FontSize="50" Click="bABack_Click"/>
+
+    </Grid>
+</Page>

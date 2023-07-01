@@ -1,0 +1,82 @@
+﻿<Page 
+    x:Class="ColoringAndDressUp.ColoringPage1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ColoringAndDressUp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    
+    
+
+    <Grid Background="White">
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0" Width="40"></StackPanel>
+        <StackPanel Grid.Column="4" Width="40"></StackPanel>
+
+        <StackPanel Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" >
+
+            <Canvas Name="coloring" Width="700" Height="700" VerticalAlignment="Center" HorizontalAlignment="Center" PointerMoved="coloring_PointerMoved" PointerPressed="coloring_PointerPressed" PointerReleased="coloring_PointerReleased">
+                <Canvas.Background>
+                    <SolidColorBrush Color="White"/>
+                </Canvas.Background>
+                <Image Name="backgroundImage" Width="700" Height="700" VerticalAlignment="Center" HorizontalAlignment="Center" Canvas.ZIndex="1000"></Image>
+            </Canvas>
+        </StackPanel>
+        <StackPanel Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Background="DeepPink">
+            <Button Style="{StaticResource ButtonStyle}" Width="200" Height="200" Name="bCRubber" Click="bCRubber_Click">
+                <Image Source="Assets/Coloring/Icons/rubber.png"/>
+            </Button>
+            <TextBlock x:Uid="Rubber" Text="Rubber" FontFamily="Ink free" FontSize="40" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Center" ></TextBlock>
+            <Button Style="{StaticResource ButtonStyle}" Width="200" Height="200" Name="bCUndo" Click="bCUndo_Click">
+                <Image Source="Assets/Coloring/Icons/undo.png"/>
+            </Button>
+            <TextBlock x:Uid="Undo" Text="Undo" FontFamily="Ink free" FontSize="40" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Center" ></TextBlock>
+            <Button Style="{StaticResource ButtonStyle}" Width="200" Height="200" Name="bCReset" Click="bCReset_Click">
+                <Image Source="Assets/Coloring/Icons/reset.png"/>
+            </Button>
+            <TextBlock x:Uid="ResetText" Text="Reset" FontFamily="Ink free" FontSize="40" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Center" ></TextBlock>
+        </StackPanel>
+        <StackPanel Grid.Column="1" VerticalAlignment="Bottom" HorizontalAlignment="Center">
+            <Button x:Uid="Save" Style="{StaticResource ButtonStyle}" Foreground="Black"  Content="Save" Name="bCSave" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  FontFamily="Ink free" FontSize="60" Click="bCSave_Click"></Button>
+            <Button x:Uid="Back" Style="{StaticResource ButtonStyle}" Foreground="Black"  Content="Back" Name="bCBack" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  FontFamily="Ink free" FontSize="60" Click="bCBack_Click"></Button>
+            <TextBlock FontSize="20"></TextBlock>            
+            <StackPanel Background="DeepPink">
+                <StackPanel Orientation="Horizontal" Name="Colors1">
+                    <Button Background="#FF7794" Height="60" Width="60" Margin="10,10,10,10" Name="Red" Click="Red_Click"></Button>
+                    <Button Background="#FFCCB4" Height="60" Width="60" Margin="10,10,10,10" Name="Orange" Click="Orange_Click"></Button>
+                    <Button Background="#FFF8D0" Height="60" Width="60" Margin="10,10,10,10" Name="Yellow" Click="Yellow_Click"></Button>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Name="Colors2">
+                    <Button Background="#BAEBE2" Height="60" Width="60" Margin="10,10,10,10" Name="Green" Click="Green_Click"></Button>
+                    <Button Background="#CFFAFD" Height="60" Width="60" Margin="10,10,10,10" Name="LightBlue" Click="LightBlue_Click"></Button>
+                    <Button Background="#9CD9FE" Height="60" Width="60" Margin="10,10,10,10" Name="DarkBlue" Click="DarkBlue_Click"></Button>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Name="Colors3">
+                    <Button Background="#BFC9FE" Height="60" Width="60" Margin="10,10,10,10" Name="Purple" Click="Purple_Click"></Button>
+                    <Button Background="#F3DDFF" Height="60" Width="60" Margin="10,10,10,10" Name="LightPink" Click="LightPink_Click"></Button>
+                    <Button Background="#FEBEEC" Height="60" Width="60" Margin="10,10,10,10" Name="DarkPink" Click="DarkPink_Click"></Button>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Button Background="#F0D9D0" Height="60" Width="60" Margin="10,10,10,10" Name="Beige" Click="Beige_Click"></Button>
+                    <Button Background="#f9f9f9" Height="60" Width="60" Margin="10,10,10,10" Name="White" Click="White_Click"></Button>
+                    <Button Background="#333333" Height="60" Width="60" Margin="10,10,10,10" Name="Black" Click="Black_Click"></Button>
+                </StackPanel>
+                <TextBlock FontSize="30"></TextBlock>
+                <Slider Name="thickness" Minimum="1" Maximum="100" Background="White" Height="55" Foreground="Black"></Slider>
+                <TextBlock x:Uid="BrushSize" Text="Brush size" FontFamily="Ink free" FontSize="40" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Center" ></TextBlock>
+                <TextBlock FontSize="10"></TextBlock>
+            </StackPanel>
+            <TextBlock FontSize="30"></TextBlock>
+        </StackPanel>
+    </Grid>
+</Page>
